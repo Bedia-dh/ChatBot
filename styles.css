@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f8fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Chatbot Container */
+.chatbot-container {
+    width: 360px;
+    height: 600px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Chat Header */
+.chat-header {
+    background: #4b91f1;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Chat Messages Area */
+.chat {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background: #f2f7fb;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Message Styles */
+.message {
+    max-width: 75%;
+    padding: 8px 12px;
+    border-radius: 18px;
+    font-size: 14px;
+    position: relative;
+    word-wrap: break-word;
+    display: inline-block;
+}
+
+.message.bot {
+    align-self: flex-start;
+    background: #fff;
+    color: #333;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 2px;
+}
+
+.message.user {
+    align-self: flex-end;
+    background: #eaf5ff;
+    color: #333;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-top-right-radius: 2px;
+}
+
+.message p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Timestamp Styles */
+.timestamp {
+    display: block;
+    font-size: 11px;
+    color: #888;
+    text-align: right;
+    margin-top: 4px;
+}
+
+/* Input Area */
+.input-area {
+    display: flex;
+    padding: 10px;
+    background: white;
+    border-top: 1px solid #ddd;
+}
+
+.input-area input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    font-size: 14px;
+}
+
+.input-area button {
+    background-color: #4b91f1;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.input-area button:hover {
+    background-color: #3a7bd5;
+}
